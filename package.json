@@ -1,0 +1,30 @@
+{
+  "name": "Expedite",
+  "version": "1.0.0",
+  "description": "A template for generic Express applications with sessions.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kronion/Expedite"
+  },
+  "author": "Collin Stedman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kronion/Expedite/issues"
+  },
+  "homepage": "https://github.com/kronion/Expedite",
+  "dependencies": {
+    "bcrypt": "^0.8.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^0.4.1",
+    "express": "3.x",
+    "jade": "^1.7.0",
+    "mongoose": "^3.8.17",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0",
+    "rootpath": "^0.1.2"
+  }
+}

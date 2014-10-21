@@ -1,0 +1,10 @@
+# User should install modules by running `npm install`
+node_modules
+
+# Key files
+server.key
+server.crt
+pem_key
+
+.DS_Store
+*.swp
