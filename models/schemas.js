@@ -7,9 +7,8 @@ module.exports = function(mongoose) {
     username:  String,
     password:  String,
     firstname: String,
-    lastname:  String
-    
-    // Extend here
+    lastname:  String,
+    sentence:  String
   });
   schemas.User = mongoose.model('User', userSchema);
 

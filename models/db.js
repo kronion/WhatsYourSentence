@@ -6,7 +6,7 @@ module.exports = function(app, express) {
 
   var mongoose = require('mongoose'),
       MongoStore = require('connect-mongo')(express);
-  mongoose.connect('mongodb://localhost/' + app.locals.title);
+  mongoose.connect('mongodb://localhost/WYS');
 
   /* Put all schemas in this dedicated file */
   var schemas = require('models/schemas.js')(mongoose);

@@ -81,7 +81,8 @@ module.exports = function(app, schemas) {
                 }
                 else {
                   var user = new schemas.User({ username: req.body.username,
-                                                password: hash
+                                                password: hash,
+                                                sentence: ''
                   });
                   user.save(function(err) {
                     if (err) {

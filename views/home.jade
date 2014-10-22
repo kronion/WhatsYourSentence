@@ -1,2 +1,17 @@
-h1 #{ user.username }
-a(href='/logout') Logout
+doctype html
+html(lang="en")
+  head
+    include head
+  body
+    div#success
+      p Sentence saved successfully!
+    div#failure
+      p There was an error updating your sentence, please try again.
+    h1 #{ user.username }
+    h1#sentence #{ user.sentence }
+    form#updateSentence(action='/updateSentence')
+      input(type='text', name='sentence')
+      input(type='submit', value='Submit')
+    a#logout(href='/logout') Logout
+    script(type='application/javascript' src='js/jquery-1.11.1.min.js')
+    script(type='application/javascript' src='js/home.js')

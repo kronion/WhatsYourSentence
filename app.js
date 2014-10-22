@@ -73,7 +73,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.locals({
-  title: 'Title'
+  title: 'What\'s Your Sentence?'
 });
 
 /* DB and sessions */
@@ -88,6 +88,10 @@ db.connection.once('open', function() {
   app.post('/login', auth.login);
   app.get('/logout', auth.logout);
   app.post('/signup', auth.signup);
+
+  /* Load all other routes */
+  var routes = require('routes/routes.js')(db.schemas);
+  app.post('/updateSentence', routes.updateSentence);
 
   /* User home */
   app.get('/user', function(req, res) {
